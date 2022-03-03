@@ -2,16 +2,15 @@
 
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" align="right" >
 
-<font align="left"  color="gray"><h2> Front end Developer </h2>
+<font align="left"  color="gray"><h2> Back-end Developer </h2>
 
 <h4 align="left"> <ul>
 <li>🔭 I’m currently working at Coding.</li>
 
- <li>❤️ I love to research, design wireframes and prototypes, to code, build websites and web applications and bring them to the market.</li>
- <li> :star2:  I am open to collaborate with other digital content creators.</li>
+ <li>I love to research, learn new thing, write backend and algorithms </li>
  <li>
-📚 Learning new things, self driven, hard working and friendly.😃</li>
- <li>📷 Experience 2+ years in Front end developer</li>
+📚 Develop myself everyday, learn new technology, hard working and goof teamwork.</li>
+ <li>👨‍💻 Experience 1+ years in Python Back-end developer</li>
 
 </ul>
 
@@ -19,7 +18,7 @@
 
 
 
- [![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=aydansamedova&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+ [![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=safaraliyevelmir&theme=react-dark)]
  
  
  
