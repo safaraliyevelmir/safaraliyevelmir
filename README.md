@@ -1,4 +1,4 @@
-### Hello world, I'm Aydan Samedova :grinning: 👋
+### Hello world, I'm Elmir Safaraliyev 👋
 
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" align="right" >
 
