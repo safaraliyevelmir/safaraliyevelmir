@@ -10,7 +10,7 @@
  <li>I love to research, learn new thing, write backend and algorithms </li>
  <li>
 📚 Develop myself everyday, learn new technology, hard working and goof teamwork.</li>
- <li>👨‍💻 Experience 1+ years in Python Back-end developer</li>
+ <li>👨‍💻 Experience 2+ years in Python Back-end developer</li>
 
 </ul>
 
