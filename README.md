@@ -6,8 +6,7 @@
  <li>I love to research, learn new thing, write backend and algorithms </li>
  <li>
 📚 Develop myself everyday, learn new technology, hard working and goof teamwork.</li>
- <li>👨‍💻 Experience 2+ years in Python Back-end developer</li>
-</ul>
+ <li>👨‍💻 Experience 2+ years in Python Back-end developer</li></ul>
 </h4>
 <font/>
   <br/><a href="https://github.com/aydansamedova/github-readme-stats"><img alt="aydansamedova's Github Stats" src="https://github-readme-stats.vercel.app/api?username=safaraliyevelmir&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" /></a>
