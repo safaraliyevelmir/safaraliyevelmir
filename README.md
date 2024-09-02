@@ -20,5 +20,4 @@
 <a href="https://www.facebook.com/elmir.safaraliyev.9" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="aydan samedova" height="30" width="40" /></a>
 <a href="https://www.instagram.com/elmirsafaraliyev/?hl=en" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="aydanmad_" height="30" width="40" /></a>
 </p>
-
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=safaraliyevelmir" alt="safaraliyevelmir" /></p>
