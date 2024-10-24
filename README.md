@@ -3,8 +3,7 @@
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" align="right" >
 <font align="left"  color="gray"><h2> Software Engineer </h2>
 <h4 align="left"> 
- <ul>
-<li>🔭 I’m currently working at Coding.</li>
+ <ul><li>🔭 I’m currently working at Coding.</li>
  <li>I love to research, learn new thing, write backend and algorithms </li>
  <li>
 📚 Develop myself everyday, learn new technology, hard working and goof teamwork.</li>
