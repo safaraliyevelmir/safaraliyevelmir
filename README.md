@@ -1,7 +1,6 @@
 ### Hello world, I'm Elmir Safaraliyev 👋
 
 
-
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" align="right" >
 <font align="left"  color="gray"><h2> Software Engineer </h2>
 <h4 align="left"> 
