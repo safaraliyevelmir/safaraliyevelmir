@@ -11,7 +11,6 @@
  <li>
 📚 Develop myself everyday, learn new technology, hard working and goof teamwork.</li>
  <li>👨‍💻 Experience 2+ years in Python Back-end developer</li>
-
 </ul>
 </h4>
 <font/>
