@@ -16,10 +16,6 @@
 
 </h4><font/>
 
-
-
- [![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=safaraliyevelmir&theme=react-dark)
- 
  
  
  <br/>
