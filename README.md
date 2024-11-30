@@ -4,7 +4,8 @@
 
 <font align="left"  color="gray"><h2> Back-end Developer </h2>
 
-<h4 align="left"> <ul>
+<h4 align="left"> 
+ <ul>
 <li>🔭 I’m currently working at Coding.</li>
 
  <li>I love to research, learn new thing, write backend and algorithms </li>
@@ -13,8 +14,8 @@
  <li>👨‍💻 Experience 2+ years in Python Back-end developer</li>
 
 </ul>
-
-</h4><font/>
+</h4>
+<font/>
 
  
  
