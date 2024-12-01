@@ -2,7 +2,7 @@
 
 <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" align="right" >
 
-<font align="left"  color="gray"><h2> Back-end Developer </h2>
+<font align="left"  color="gray"><h2> Software Engineer </h2>
 
 <h4 align="left"> 
  <ul>
