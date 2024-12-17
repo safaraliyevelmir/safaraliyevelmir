@@ -12,6 +12,8 @@
   <br/><a href="https://github.com/aydansamedova/github-readme-stats"><img alt="aydansamedova's Github Stats" src="https://github-readme-stats.vercel.app/api?username=safaraliyevelmir&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" /></a>
 <br/>
   <a href="https://github.com/aydansamedova/github-readme-stats"><img alt="aydansamedova's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=safaraliyevelmir&langs_count=8&count_private=true&layout=compact&theme=tokyonight&hide_border=true" /></a>
+
+
   <br/><h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.linkedin.com/in/elmirsafaraliyev/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aydan samedova" height="30" width="40" /></a>
