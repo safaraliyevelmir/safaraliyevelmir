@@ -48,13 +48,16 @@ def fetch_user_info() -> dict:
     return resp.json()
 
 
+# No privacy filter: with a PAT that has repo scope this also counts
+# private/organization repositories, which is where most of the LOC lives.
+# With the default Actions GITHUB_TOKEN it silently degrades to public-only.
 OWNED_REPOS_QUERY = """
 query($login: String!, $cursor: String) {
   user(login: $login) {
-    repositories(first: 100, after: $cursor, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) {
+    repositories(first: 100, after: $cursor, ownerAffiliations: [OWNER, ORGANIZATION_MEMBER, COLLABORATOR], isFork: false) {
       totalCount
       pageInfo { hasNextPage endCursor }
-      nodes { name stargazerCount owner { login } }
+      nodes { name stargazerCount isPrivate owner { login } }
     }
   }
 }
@@ -63,7 +66,7 @@ query($login: String!, $cursor: String) {
 CONTRIBUTED_REPOS_QUERY = """
 query($login: String!, $cursor: String) {
   user(login: $login) {
-    repositoriesContributedTo(first: 100, after: $cursor, contributionTypes: [COMMIT], includeUserRepositories: false, privacy: PUBLIC) {
+    repositoriesContributedTo(first: 100, after: $cursor, contributionTypes: [COMMIT], includeUserRepositories: false) {
       totalCount
       pageInfo { hasNextPage endCursor }
       nodes { name owner { login } }
@@ -172,8 +175,8 @@ def collect_stats() -> dict:
     }
 
 
-def load_ascii_avatar() -> list:
-    path = os.path.join(REPO_ROOT, "assets", "avatar_ascii.txt")
+def load_avatar(theme_name: str) -> list:
+    path = os.path.join(REPO_ROOT, "assets", f"avatar_{theme_name}.txt")
     with open(path) as f:
         return f.read().splitlines()
 
@@ -181,8 +184,10 @@ def load_ascii_avatar() -> list:
 INFO_ROWS = [
     ("Role", "Software Engineer"),
     ("Location", "Baku, Azerbaijan"),
-    ("Languages", "Python"),
-    ("Interests", "Shopify, Trading, Machine Learning"),
+    ("Languages", "Python, JavaScript, HTML, CSS"),
+    ("Databases", "PostgreSQL, MongoDB"),
+    ("Cloud", "AWS"),
+    ("Interests", "Shopify, Trading, Machine Learning, Minecraft"),
     ("LinkedIn", "linkedin.com/in/elmirsafaraliyev"),
 ]
 
@@ -196,9 +201,11 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-AVATAR_FONT_SIZE = 6
-AVATAR_LINE_H = 7.5
-AVATAR_CHAR_W = 3.6
+# Braille glyph metrics vary between fallback fonts, so each art line is
+# pinned to an exact pixel width via textLength below.
+AVATAR_FONT_SIZE = 12
+AVATAR_LINE_H = 12
+AVATAR_CHAR_W = 6.5
 INFO_FONT_SIZE = 14
 INFO_LINE_H = 20
 INFO_CHAR_W = 8.4
@@ -222,11 +229,15 @@ def render_svg(stats: dict, ascii_lines: list, theme_name: str) -> str:
         f'<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,monospace" '
         f'width="{width:.0f}px" height="{height:.0f}px" font-size="{INFO_FONT_SIZE}px">',
         f'<rect width="{width:.0f}px" height="{height:.0f}px" fill="{t["bg"]}" rx="10"/>',
-        f'<text x="{avatar_x}" y="{top}" fill="{t["fg"]}" font-size="{AVATAR_FONT_SIZE}px">',
+        f'<text x="{avatar_x}" y="{top}" fill="{t["fg"]}" font-size="{AVATAR_FONT_SIZE}px" '
+        f'font-family="\'Apple Braille\',\'Segoe UI Symbol\',\'Noto Sans Symbols 2\',monospace">',
     ]
     for i, line in enumerate(ascii_lines):
         y = top + i * AVATAR_LINE_H
-        parts.append(f'<tspan x="{avatar_x}" y="{y:.1f}">{esc(line)}</tspan>')
+        parts.append(
+            f'<tspan x="{avatar_x}" y="{y:.1f}" textLength="{avatar_width_px:.0f}" '
+            f'lengthAdjust="spacingAndGlyphs">{esc(line)}</tspan>'
+        )
     parts.append("</text>")
 
     line_h = INFO_LINE_H
@@ -278,11 +289,10 @@ def render_svg(stats: dict, ascii_lines: list, theme_name: str) -> str:
 
 
 def main() -> int:
-    ascii_lines = load_ascii_avatar()
     stats = collect_stats()
 
     for theme in ("dark", "light"):
-        svg = render_svg(stats, ascii_lines, theme)
+        svg = render_svg(stats, load_avatar(theme), theme)
         out_path = os.path.join(REPO_ROOT, f"{theme}_mode.svg")
         with open(out_path, "w") as f:
             f.write(svg + "\n")

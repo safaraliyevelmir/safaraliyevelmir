@@ -24,7 +24,9 @@ jobs:
 
       - name: Generate cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GH_PAT (classic PAT with repo + read:org) lets the LOC counter see
+          # private/organization repos; without it only public repos count.
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: safaraliyevelmir
         run: python scripts/generate_card.py
 

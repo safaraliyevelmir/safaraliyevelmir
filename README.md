@@ -3,7 +3,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
-  <img alt="Elmir's GitHub stats" src="light_mode.svg">
+  <img alt="Elmir's GitHub stats" src="light_mode.svg" width="100%">
 </picture>
 
 <br/><h3 align="left">Connect with me:</h3>

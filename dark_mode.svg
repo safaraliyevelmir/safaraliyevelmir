@@ -1,58 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,monospace" width="690px" height="340px" font-size="14px">
-<rect width="690px" height="340px" fill="#161b22" rx="10"/>
-<text x="15" y="30" fill="#c9d1d9" font-size="6px">
-<tspan x="15" y="30.0">                                                                      </tspan>
-<tspan x="15" y="37.5">                                                                      </tspan>
-<tspan x="15" y="45.0">                                                                      </tspan>
-<tspan x="15" y="52.5">                                                                      </tspan>
-<tspan x="15" y="60.0">                                                                      </tspan>
-<tspan x="15" y="67.5">                               @%%@@                                  </tspan>
-<tspan x="15" y="75.0">                            %+-..::--+%                               </tspan>
-<tspan x="15" y="82.5">                         @=.       ..::+                              </tspan>
-<tspan x="15" y="90.0">                        #:.:=*####*++-::+@                            </tspan>
-<tspan x="15" y="97.5">                       #::*           %=:@                            </tspan>
-<tspan x="15" y="105.0">                       =:=%@@          %-                             </tspan>
-<tspan x="15" y="112.5">                       #:-%%#**+*%@*+*##+                             </tspan>
-<tspan x="15" y="120.0">                        :-%#++===# +=*#%#                             </tspan>
-<tspan x="15" y="127.5">                        #+%%###%%% @%@@@%                             </tspan>
-<tspan x="15" y="135.0">                        %%@@@@%###*#@ @@@                             </tspan>
-<tspan x="15" y="142.5">                         %%%%@%*+=++*#%%                              </tspan>
-<tspan x="15" y="150.0">                          %####+**+*##%#                              </tspan>
-<tspan x="15" y="157.5">                           %**#%%##%@%*@                              </tspan>
-<tspan x="15" y="165.0">                            #+----=--+                                </tspan>
-<tspan x="15" y="172.5">               @@@@@@@@    @@#*=-:.-*                                 </tspan>
-<tspan x="15" y="180.0">             @@@@@@@@@@ #-*@%##%*++%@@                                </tspan>
-<tspan x="15" y="187.5">           @@@@@@@@@@@@#-..-+##***#@ #-                               </tspan>
-<tspan x="15" y="195.0">         @@@@@@@@@@@%+-:.....:=*##%@@*.=%                             </tspan>
-<tspan x="15" y="202.5">        @@@@@@@@@%+-::::::.....:=*% @=...:=#@                         </tspan>
-<tspan x="15" y="210.0">      @@@@@@@@%*=-:::::::::..:....-+#:.......-=*%                     </tspan>
-<tspan x="15" y="217.5">      @@@@@@@+::::::::::::::. ..... ....:::...:.:=%                   </tspan>
-<tspan x="15" y="225.0">     @@@@@@@*::::::..::.:::::.........:::::::::::.:%                  </tspan>
-<tspan x="15" y="232.5">    @@@@@@@@=::::..:.....:::::::.....:.::::::::::.:-@                 </tspan>
-<tspan x="15" y="240.0">    @@@@@@@@-:::::.......::::::::....::::::::::::.::=                 </tspan>
-<tspan x="15" y="247.5">   @@@@@@@@@-::..::.......:::::::.....:::::::::...:::%                </tspan>
-<tspan x="15" y="255.0">   @@@@@@@@@-:..:..... .....:::.::....:::::::::....:.=                </tspan>
-<tspan x="15" y="262.5">   @@@@@@@@@-::..::.....  .......:........:::......:::#               </tspan>
-<tspan x="15" y="270.0">   @@@@@@@@@=:::........  ........:............ ...:--:% @@@@@@       </tspan>
-<tspan x="15" y="277.5">  @@@@@@@@@@+:::::...:... .......................:*@%*-+ @@@@@@@@     </tspan>
-<tspan x="15" y="285.0">  @@@@@@@@@@*::::::::....  .. .....:........... :#%+*%@%@@@@@@@@@@    </tspan>
-<tspan x="15" y="292.5">  @@@@@@@@@@*.......:::::.  .   ...............:#@#@@%@@@@@@@@@@@@@@  </tspan>
-<tspan x="15" y="300.0"> @@@@@@@@@@@@:.::-+#%@@@ *-===--...............#@@  @@%@@%@@@@@@@@@@@ </tspan>
-<tspan x="15" y="307.5"> @@@@@@@@@@@@#++*%        %@    @#*++=-:::....-#@    @@@@%@@@@@@@@@@@@</tspan>
-<tspan x="15" y="315.0">@@@@@@@@@@@@@@@@%@@@    @@%#@          @@%%%%%@@       @@@%@@@@@@@@@@@</tspan>
-<tspan x="15" y="322.5">@@@@@@@@@@@@@@@@%%@@@@@@@@%*#%@@@%%@@@@@@@@@  @@@@@@@@%%%%%@@@@@@@@@@@</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,monospace" width="920px" height="436px" font-size="14px">
+<rect width="920px" height="436px" fill="#161b22" rx="10"/>
+<text x="15" y="30" fill="#c9d1d9" font-size="12px" font-family="'Apple Braille','Segoe UI Symbol','Noto Sans Symbols 2',monospace">
+<tspan x="15" y="30.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="42.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="54.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="66.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="78.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⣀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="90.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠔⠊⠂⠈⠀⢂⢂⠑⠐⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="102.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠁⠀⠀⢀⠀⢀⠀⠀⠀⠐⡁⠄⠬⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="114.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠄⣰⠴⠓⠓⠋⠑⠋⠑⠓⠣⠦⡠⠈⠌⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="126.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢅⠠⢢⢷⣤⣤⡶⠂⠀⠀⠀⠀⠀⠀⢀⣗⠨⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="138.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠌⢌⣿⣳⢿⠠⡠⠄⡤⣠⢤⠠⢠⢺⢿⢨⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="150.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠀⢜⡾⡧⡣⡓⡨⡨⡪⡭⢣⣊⣱⡫⣿⢜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="162.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣣⡱⣯⣷⣫⡷⣽⣹⢮⠀⠐⣷⢷⣋⡿⣻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="174.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢎⢟⣻⡿⣿⣛⡽⣕⡗⢍⢫⣢⢩⢷⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="186.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⡳⣻⢯⣷⡻⢑⢕⣪⣲⡪⡫⣿⢯⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="198.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠩⢯⡳⣝⣞⣾⣹⣨⠸⠽⣟⡗⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="210.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⡀⠀⠀⠀⠀⠀⢳⣅⠣⠓⠓⠜⠕⠺⠑⢝⠌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="222.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⣿⣿⣿⣿⣷⡄⠀⠀⠀⣾⡯⡯⣢⣂⡀⡀⢄⣢⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="234.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⡎⠉⠿⡿⡯⡯⣗⢷⢱⢱⣳⡿⠣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="246.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⠀⠀⣠⣼⣿⣿⣿⣿⣻⣽⣿⣷⣿⣿⠫⠂⡐⠀⢀⠈⠻⢝⡎⣗⢵⣳⣯⣧⡮⠀⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="258.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⠀⢀⣾⣿⣿⣿⣿⢿⣾⣿⣿⡿⠿⢑⠐⠈⠄⡀⠂⡀⢀⠠⠀⠙⠾⣽⣺⣿⣟⡏⡀⠨⠐⠠⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="270.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⠀⢀⣾⣿⣿⣿⣿⣽⣿⡿⢟⠍⠌⡐⠠⠈⠄⡁⢐⠠⠀⠄⠀⠄⠐⠀⡈⠚⠟⡟⠅⠀⠂⡀⠡⠀⠈⠒⠠⠄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="282.0" textLength="390" lengthAdjust="spacingAndGlyphs">⠀⢨⣿⣿⣿⣿⣯⣿⡿⠉⠌⠠⠨⠐⠠⢁⠁⢂⠠⠐⢀⠂⡀⠈⠀⠂⠄⠠⠀⠀⢀⠁⡀⠄⠀⠄⠂⡀⠂⠐⡀⢂⠑⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="294.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣰⣾⣿⣿⣿⣿⣻⣿⠡⢁⠁⠅⠂⠁⠄⠀⡈⠠⠀⢂⠐⠠⠐⠀⠄⠀⠄⢀⠀⠁⢀⠠⠀⢂⠁⠂⡁⠄⠂⠁⠠⠀⠂⡀⠣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="306.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣸⣿⣿⣿⣿⣻⣿⠯⠐⡀⠂⠂⠄⠁⠠⠁⠀⡀⠂⢀⠂⠡⢈⠐⢈⠀⢂⠀⠄⢁⠀⠄⠐⡀⢂⠡⠀⡂⠡⠈⠐⡈⠀⠄⡈⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="318.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣿⣿⣿⠨⠐⠀⠌⠐⢈⠠⠀⠐⠀⠀⠌⠀⠠⠁⠄⡈⠄⠈⡀⠄⠀⠄⢀⠠⠁⠠⠀⢂⠁⡐⠈⠄⢁⠀⠂⡀⢂⠈⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="330.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣿⣽⣿⠈⠄⡁⠐⠠⠀⠂⢈⠀⠀⠀⠀⠠⠐⠀⢁⠀⠂⡁⠠⠐⠀⠠⠀⠀⠄⢁⢈⠠⠐⠀⠌⠐⡀⠠⠀⠠⠀⢂⠰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="342.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣿⣿⣿⡬⢀⠐⠈⠀⠂⠠⠀⠐⠀⠄⠀⠀⠀⠠⠀⢈⠠⠀⠄⠂⢁⠀⡀⠈⠀⠄⠠⠀⠌⠐⠈⡀⠄⠀⠀⠐⠈⡀⠐⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</tspan>
+<tspan x="15" y="354.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣿⣾⣿⣩⠀⢂⠁⡐⠈⠀⠂⡀⠄⠀⠄⠀⠀⠄⠀⠀⠠⠐⠀⠈⡀⢀⠀⠀⠁⡀⠄⠂⠐⠈⢀⠀⡀⠀⠀⡁⠐⡀⠌⠈⢆⣤⣶⣾⣿⣦⣤⣄⠀⠀⠀⠀</tspan>
+<tspan x="15" y="366.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣟⣯⣿⣷⡈⠄⠠⢀⠂⠐⠀⠠⠐⢀⠀⡀⠀⠀⠀⠀⠂⠀⡀⠁⠀⠄⠀⠈⠀⠀⡀⠀⠐⠀⠠⠀⠀⠀⠠⡠⠒⡩⡑⠃⢼⣼⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀</tspan>
+<tspan x="15" y="378.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣿⣿⣿⣷⡂⠨⠐⠀⠂⢁⠈⠠⠐⠀⠄⠠⠀⠀⠈⠀⠀⠀⠀⢀⠁⠠⠈⠀⠈⠀⡀⠈⢀⠈⢀⠀⠁⠀⣼⣻⢊⠔⣊⣁⢬⣻⣿⣟⣿⣯⣿⣿⢿⣿⣦⠀</tspan>
+<tspan x="15" y="390.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣿⣾⣿⣽⣿⡄⠂⡀⠄⠁⠄⠨⡀⣂⣂⡐⢄⡀⠀⠐⠀⠀⠀⡀⠄⠠⠐⠀⠂⠁⠀⠠⠐⠀⠀⠄⠀⢀⣮⣿⠑⢀⡴⠕⣩⢄⢄⣟⣿⣻⣟⣯⣿⣿⣿⣿⣷</tspan>
+<tspan x="15" y="402.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣯⣷⣿⣟⣿⣯⠀⢀⡢⣕⡗⠉⠁⠀⠀⠀⠀⢱⣺⠒⠒⠒⠒⠠⢀⠠⠀⠐⠀⡀⠈⠀⢀⠀⠂⠀⠂⡸⣞⠿⠀⡀⠀⡞⣓⣥⢤⣺⣻⣿⢿⣿⣟⣿⣾⡿⣿</tspan>
+<tspan x="15" y="414.0" textLength="390" lengthAdjust="spacingAndGlyphs">⣿⣿⣿⣻⣿⣯⣿⣟⣿⣿⣿⢾⣽⣿⣦⠀⢀⠀⠀⣠⣼⣏⣿⡆⠀⠀⠀⠀⠀⠈⠉⠉⠐⠒⠑⠠⠤⠦⠥⠤⠾⠝⠓⠛⠉⠀⠀⠉⢉⣥⣿⣟⣿⣟⣯⣿⣿⣽⣿⣿</tspan>
 </text>
-<text x="292" y="30" fill="#c9d1d9">
-<tspan x="292.0" y="30">safaraliyevelmir</tspan> -----------------------------
-<tspan x="292.0" y="50" fill="#ffa657">Role</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Software Engineer</tspan>
-<tspan x="292.0" y="70" fill="#ffa657">Location</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Baku, Azerbaijan</tspan>
-<tspan x="292.0" y="90" fill="#ffa657">Languages</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Python</tspan>
-<tspan x="292.0" y="110" fill="#ffa657">Interests</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Shopify, Trading, Machine Learning</tspan>
-<tspan x="292.0" y="130" fill="#ffa657">LinkedIn</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">linkedin.com/in/elmirsafaraliyev</tspan>
-<tspan x="292.0" y="160">GitHub Stats</tspan> -----------------------------
-<tspan x="292.0" y="180" fill="#ffa657">Repos</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">12</tspan><tspan fill="#616e7f"> | </tspan><tspan fill="#ffa657">Contributed</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">5</tspan>
-<tspan x="292.0" y="200" fill="#ffa657">Stars</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">67</tspan><tspan fill="#616e7f"> | </tspan><tspan fill="#ffa657">Followers</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">34</tspan>
-<tspan x="292.0" y="220" fill="#ffa657">Commits</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">890</tspan>
-<tspan x="292.0" y="240" fill="#ffa657">Lines of Code</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#3fb950">12,345++</tspan><tspan fill="#616e7f">, </tspan><tspan fill="#f85149">678--</tspan>
+<text x="430" y="30" fill="#c9d1d9">
+<tspan x="430.0" y="30">safaraliyevelmir</tspan> -----------------------------
+<tspan x="430.0" y="50" fill="#ffa657">Role</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Software Engineer</tspan>
+<tspan x="430.0" y="70" fill="#ffa657">Location</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Baku, Azerbaijan</tspan>
+<tspan x="430.0" y="90" fill="#ffa657">Languages</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Python, JavaScript, HTML, CSS</tspan>
+<tspan x="430.0" y="110" fill="#ffa657">Databases</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">PostgreSQL, MongoDB</tspan>
+<tspan x="430.0" y="130" fill="#ffa657">Cloud</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">AWS</tspan>
+<tspan x="430.0" y="150" fill="#ffa657">Interests</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">Shopify, Trading, Machine Learning, Minecraft</tspan>
+<tspan x="430.0" y="170" fill="#ffa657">LinkedIn</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">linkedin.com/in/elmirsafaraliyev</tspan>
+<tspan x="430.0" y="200">GitHub Stats</tspan> -----------------------------
+<tspan x="430.0" y="220" fill="#ffa657">Repos</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">12</tspan><tspan fill="#616e7f"> | </tspan><tspan fill="#ffa657">Contributed</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">5</tspan>
+<tspan x="430.0" y="240" fill="#ffa657">Stars</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">67</tspan><tspan fill="#616e7f"> | </tspan><tspan fill="#ffa657">Followers</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">34</tspan>
+<tspan x="430.0" y="260" fill="#ffa657">Commits</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#a5d6ff">890</tspan>
+<tspan x="430.0" y="280" fill="#ffa657">Lines of Code</tspan><tspan fill="#616e7f">: </tspan><tspan fill="#3fb950">12,345++</tspan><tspan fill="#616e7f">, </tspan><tspan fill="#f85149">678--</tspan>
 </text>
 </svg>
