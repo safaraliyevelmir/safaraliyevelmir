@@ -110,12 +110,13 @@ def fetch_contributed_repos() -> list:
 
 
 def fetch_total_commits(created_at: str) -> int:
+    now = datetime.now(timezone.utc)
     start_year = datetime.fromisoformat(created_at.replace("Z", "+00:00")).year
-    current_year = datetime.now(timezone.utc).year
     total = 0
-    for year in range(start_year, current_year + 1):
+    for year in range(start_year, now.year + 1):
         frm = f"{year}-01-01T00:00:00Z"
-        to = f"{year}-12-31T23:59:59Z"
+        end = min(datetime(year, 12, 31, 23, 59, 59, tzinfo=timezone.utc), now)
+        to = end.strftime("%Y-%m-%dT%H:%M:%SZ")
         data = gh_graphql(COMMITS_QUERY, {"login": USERNAME, "from": frm, "to": to})
         total += data["user"]["contributionsCollection"]["totalCommitContributions"]
     return total
@@ -130,9 +131,18 @@ def fetch_loc(owner: str, repo: str) -> tuple:
             # GitHub is still computing stats for this repo; wait and retry once or twice.
             time.sleep(3)
             continue
-        resp.raise_for_status()
-        for entry in resp.json():
-            if entry.get("author", {}).get("login", "").lower() == USERNAME.lower():
+        # 204: empty repo. 403/404: token can't read this repo's stats. Either
+        # way a single repo must not sink the whole card.
+        if resp.status_code == 204 or not resp.ok:
+            if not resp.ok:
+                print(f"warning: stats for {owner}/{repo} -> HTTP {resp.status_code}, skipping", file=sys.stderr)
+            return 0, 0
+        try:
+            entries = resp.json()
+        except ValueError:
+            return 0, 0
+        for entry in entries:
+            if (entry.get("author") or {}).get("login", "").lower() == USERNAME.lower():
                 additions = sum(w["a"] for w in entry["weeks"])
                 deletions = sum(w["d"] for w in entry["weeks"])
                 return additions, deletions
@@ -159,10 +169,13 @@ def collect_stats() -> dict:
     loc_add = loc_del = 0
     for owner, name in all_repos:
         a, d = fetch_loc(owner, name)
+        print(f"loc {owner}/{name}: +{a} -{d}")
         loc_add += a
         loc_del += d
 
     commits = fetch_total_commits(user["created_at"])
+    print(f"totals: repos={user['public_repos']} contributed={len(contributed)} "
+          f"stars={stars} commits={commits} loc=+{loc_add}/-{loc_del}")
 
     return {
         "repos": user["public_repos"],
