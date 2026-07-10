@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""One-off tool: convert the GitHub avatar into cached braille-art portraits.
+"""One-off tool: convert the GitHub avatar into cached dot-matrix portraits.
 
 Run manually whenever the avatar changes:
     python scripts/make_ascii_avatar.py
-Outputs are committed as assets/avatar_dark.txt / assets/avatar_light.txt and
-reused by generate_card.py on every scheduled run, so the (fixed) cost of the
-conversion is paid once.
+Outputs are committed as assets/avatar_dark.txt / avatar_light.txt ('#'/'.'
+bitmap rows) and reused by generate_card.py on every scheduled run, so the
+(fixed) cost of the conversion is paid once.
 
-Braille cells pack 2x4 dots per character, giving ~8x the resolution of a
-plain ASCII ramp — enough for the face to actually be recognizable. The
+The bitmap is rendered as native SVG rectangles rather than braille/ASCII
+glyphs: text art depends on which fallback font the viewer has (Apple
+Braille, for one, draws hollow rings for empty dot positions, drowning the
+portrait in texture), while vector dots look identical everywhere. The
 photo's light background is masked out first, then the subject's tonal range
-is contrast-stretched and Floyd-Steinberg dithered to 1-bit dots. Dot
-polarity is per theme: on the dark card bright pixels become dots (light on
-dark), on the light card dark pixels do.
+is contrast-stretched and Floyd-Steinberg dithered to 1-bit. Dot polarity is
+per theme: on the dark card bright pixels become dots, on the light card
+dark pixels do.
 """
 import io
 import os
@@ -25,18 +27,17 @@ from PIL import Image
 AVATAR_URL = "https://avatars.githubusercontent.com/u/76993406?v=4"
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
-CHAR_WIDTH = 60  # output width in braille characters (120 dot columns)
+DOT_COLUMNS = 120  # bitmap width in dots
 BG_THRESHOLD = 192  # pixels lighter than this are background
 
 
-def to_braille(img: Image.Image, invert: bool) -> str:
+def to_bitmap(img: Image.Image, invert: bool) -> str:
     img = img.convert("L")
     w, h = img.size
     img = img.crop((int(w * 0.10), 0, int(w * 0.92), int(h * 0.92)))
 
-    px_w = CHAR_WIDTH * 2
+    px_w = DOT_COLUMNS
     px_h = int(px_w * img.height / img.width)
-    px_h -= px_h % 4
     img = img.resize((px_w, px_h))
     arr = np.array(img, dtype=np.float32)
 
@@ -67,19 +68,7 @@ def to_braille(img: Image.Image, invert: bool) -> str:
                     err[y + 1, x + 1] += e * 1 / 16
     on[bg_mask] = False
 
-    bits = [(0, 0, 0x01), (0, 1, 0x02), (0, 2, 0x04), (1, 0, 0x08),
-            (1, 1, 0x10), (1, 2, 0x20), (0, 3, 0x40), (1, 3, 0x80)]
-    lines = []
-    for cy in range(0, px_h, 4):
-        row = []
-        for cx in range(0, px_w, 2):
-            code = 0
-            for dx, dy, bit in bits:
-                if on[cy + dy, cx + dx]:
-                    code |= bit
-            row.append(chr(0x2800 + code))
-        lines.append("".join(row))
-    return "\n".join(lines)
+    return "\n".join("".join("#" if on[y, x] else "." for x in range(px_w)) for y in range(px_h))
 
 
 def main() -> int:
@@ -88,7 +77,7 @@ def main() -> int:
     img = Image.open(io.BytesIO(resp.content))
 
     for theme, invert in (("dark", True), ("light", False)):
-        art = to_braille(img, invert)
+        art = to_bitmap(img, invert)
         path = os.path.join(ASSETS_DIR, f"avatar_{theme}.txt")
         with open(path, "w") as f:
             f.write(art + "\n")

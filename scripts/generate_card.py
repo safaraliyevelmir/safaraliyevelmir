@@ -214,44 +214,51 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-# Braille glyph metrics vary between fallback fonts, so each art line is
-# pinned to an exact pixel width via textLength below.
-AVATAR_FONT_SIZE = 12
-AVATAR_LINE_H = 12
-AVATAR_CHAR_W = 6.5
+AVATAR_WIDTH_PX = 390
 INFO_FONT_SIZE = 14
 INFO_LINE_H = 20
 INFO_CHAR_W = 8.4
 
 
-def render_svg(stats: dict, ascii_lines: list, theme_name: str) -> str:
+def avatar_path(bitmap_lines: list) -> str:
+    """Merge horizontal runs of '#' dots into path segments (unit dot-space)."""
+    segs = []
+    for y, line in enumerate(bitmap_lines):
+        x = 0
+        while x < len(line):
+            if line[x] == "#":
+                start = x
+                while x < len(line) and line[x] == "#":
+                    x += 1
+                segs.append(f"M{start} {y}h{x - start}v1h{-(x - start)}z")
+            else:
+                x += 1
+    return "".join(segs)
+
+
+def render_svg(stats: dict, bitmap_lines: list, theme_name: str) -> str:
     t = THEMES[theme_name]
     top = 30
     avatar_x = 15
-    avatar_width_px = max(len(line) for line in ascii_lines) * AVATAR_CHAR_W
-    info_x = avatar_x + avatar_width_px + 25
+    dot_cols = max(len(line) for line in bitmap_lines)
+    scale = AVATAR_WIDTH_PX / dot_cols
+    avatar_height_px = len(bitmap_lines) * scale
+    info_x = avatar_x + AVATAR_WIDTH_PX + 25
 
     info_line_count = 1 + len(INFO_ROWS) + 6  # header + rows + spacer + stats header + 4 stat rows
     longest_info_line = max(len(k) + len(v) for k, v in INFO_ROWS) + 2
     longest_info_line = max(longest_info_line, len("Lines of Code: ") + 20)
 
     width = info_x + longest_info_line * INFO_CHAR_W + 20
-    height = max(len(ascii_lines) * AVATAR_LINE_H, info_line_count * INFO_LINE_H) + 40
+    height = max(avatar_height_px + 15, info_line_count * INFO_LINE_H) + 40
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,monospace" '
         f'width="{width:.0f}px" height="{height:.0f}px" font-size="{INFO_FONT_SIZE}px">',
         f'<rect width="{width:.0f}px" height="{height:.0f}px" fill="{t["bg"]}" rx="10"/>',
-        f'<text x="{avatar_x}" y="{top}" fill="{t["fg"]}" font-size="{AVATAR_FONT_SIZE}px" '
-        f'font-family="\'Apple Braille\',\'Segoe UI Symbol\',\'Noto Sans Symbols 2\',monospace">',
+        f'<path transform="translate({avatar_x},20) scale({scale:.3f})" fill="{t["fg"]}" '
+        f'd="{avatar_path(bitmap_lines)}"/>',
     ]
-    for i, line in enumerate(ascii_lines):
-        y = top + i * AVATAR_LINE_H
-        parts.append(
-            f'<tspan x="{avatar_x}" y="{y:.1f}" textLength="{avatar_width_px:.0f}" '
-            f'lengthAdjust="spacingAndGlyphs">{esc(line)}</tspan>'
-        )
-    parts.append("</text>")
 
     line_h = INFO_LINE_H
     parts.append(f'<text x="{info_x:.0f}" y="{top}" fill="{t["fg"]}">')
